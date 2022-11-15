@@ -8,5 +8,4 @@ function NotificationButton() {
         </div>
     )
 }
-
 export default NotificationButton
