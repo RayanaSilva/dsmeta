@@ -1,5 +1,6 @@
 package com.devsuperior.dsmeta.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,7 @@ public class SmsService {
 	@Value("${twilio.phone.to}")
 	private String twilioPhoneTo;
 	
+	@Autowired
 	private SaleRepository saleRepository;
 
 	public void sendSms(Long saleId) {
